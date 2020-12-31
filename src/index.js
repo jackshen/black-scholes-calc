@@ -65,7 +65,5 @@ const blackScholesWarrantCall = (S, K, sigma, r, t, q = 1) => {
   return (S * normCdf(d1) - K * Math.exp(-r * t) * normCdf(d2)) / q;
 };
 
-console.log(blackScholesWarrantCall(13.1, 11.5, 0.301, 0, 1340 / 365));
-
 export { blackScholesCall, blackScholesPut, blackScholesWarrantCall };
 export default blackScholesCall;
